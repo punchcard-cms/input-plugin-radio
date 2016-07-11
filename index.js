@@ -45,5 +45,5 @@ module.exports = {
       },
     },
   },
-  html: '{% for option in radio.options %}<label for="{{radio.id}}--{{option.index}}"><input type="{{radio.type}}" name="{{radio.name}}" id="{{radio.id}}--{{option.index}}" value="{{option.value}}" {% if option.value == radio.value %}checked{% endif %}>{{option.label}}</label>{% endfor %}',
+  html: '{% for option in radio.options %}<label for="{{radio.id}}--{{loop.index}}"><input type="{{radio.type}}" name="{{radio.name}}" id="{{radio.id}}--{{loop.index}}" value="{{option.value}}" {% if option.value == radio.value %}checked{% endif %}>{{option.label}}</label>{% endfor %}',
 };
