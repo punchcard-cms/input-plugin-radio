@@ -1,6 +1,5 @@
 {
   "name": "input-plugin-radio",
-  "version": "0.0.1",
   "description": "A plugin for multiple radio buttons",
   "main": "index.js",
   "scripts": {
@@ -10,11 +9,12 @@
     "ava:watch": "ava --watch | tap-diff",
     "nyc": "nyc --all npm run ava",
     "lint": "eslint index.js lib && eslint -c ./.eslintrc-ava.yml tests",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:punchcard-cms/input-plugin-radio.git"
+    "url": "https://github.com/punchcard-cms/input-plugin-radio.git"
   },
   "contributors": [
     "Rachel White <whiter@us.ibm.com>"
@@ -29,7 +29,8 @@
     "nyc": "^6.0.0",
     "punchcard-shared-tests": "^1.0.2",
     "tap-diff": "^0.1.1",
-    "validator": "^5.2.0"
+    "validator": "^5.2.0",
+    "semantic-release": "^4.3.5"
   },
   "engines": {
     "node": "5.7",
