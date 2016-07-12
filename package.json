@@ -1,5 +1,6 @@
 {
   "name": "input-plugin-radio",
+  "version": "0.0.0",
   "description": "A plugin for multiple radio buttons",
   "main": "index.js",
   "scripts": {
